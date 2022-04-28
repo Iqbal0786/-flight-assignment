@@ -52,6 +52,7 @@ export default function Home() {
           <TableRow>
             <TableCell>No.</TableCell>
             <TableCell align="right">Airline Name</TableCell>
+            <TableCell align="right">Cost</TableCell>
             <TableCell align="right">Departure</TableCell>
             <TableCell align="right">Arrival</TableCell>
           </TableRow>
@@ -66,6 +67,7 @@ export default function Home() {
                 {index+1}
               </TableCell>
               <TableCell align="right">{row.airlineName}</TableCell>
+              <TableCell align="right">{row.cost} ₹</TableCell>
               <TableCell align="right">{row.startTime} from {row.start_airport_id.location}</TableCell>
             
               <TableCell align="right">{row.endTime} at {row.end_airport_id.location}</TableCell>
